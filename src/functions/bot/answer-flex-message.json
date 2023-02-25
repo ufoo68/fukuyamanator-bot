@@ -1,16 +1,5 @@
 {
     "type": "bubble",
-    "hero": {
-      "type": "image",
-      "size": "full",
-      "aspectRatio": "20:13",
-      "aspectMode": "cover",
-      "action": {
-        "type": "uri",
-        "uri": "http://linecorp.com/"
-      },
-      "url": "https://tblg.k-img.com/restaurant/images/Rvw/74864/640x640_rect_74864680.jpg"
-    },
     "body": {
       "type": "box",
       "layout": "vertical",
@@ -19,7 +8,12 @@
           "type": "text",
           "text": "尾道ラーメン 一丁",
           "weight": "bold",
-          "size": "xl"
+          "size": "xl",
+          "action": {
+            "type": "message",
+            "label": "action",
+            "text": "hello"
+          }
         },
         {
           "type": "box",
@@ -34,7 +28,7 @@
               "contents": [
                 {
                   "type": "text",
-                  "text": "営業時間",
+                  "text": "時間",
                   "color": "#aaaaaa",
                   "size": "sm",
                   "flex": 1
@@ -42,29 +36,6 @@
                 {
                   "type": "text",
                   "text": "10:00 - 23:00",
-                  "wrap": true,
-                  "color": "#666666",
-                  "size": "sm",
-                  "flex": 3
-                }
-              ],
-              "position": "relative"
-            },
-            {
-              "type": "box",
-              "layout": "baseline",
-              "spacing": "sm",
-              "contents": [
-                {
-                  "type": "text",
-                  "text": "住所",
-                  "color": "#aaaaaa",
-                  "size": "sm",
-                  "flex": 1
-                },
-                {
-                  "type": "text",
-                  "text": "広島県福山市三之丸町3-7 土井ビル 1F",
                   "wrap": true,
                   "color": "#666666",
                   "size": "sm",
@@ -95,41 +66,75 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    "footer": {
-      "type": "box",
-      "layout": "vertical",
-      "spacing": "sm",
-      "contents": [
-        {
-          "type": "button",
-          "style": "link",
-          "height": "sm",
-          "action": {
-            "type": "uri",
-            "label": "電話予約",
-            "uri": "https://linecorp.com"
-          }
-        },
-        {
-          "type": "button",
-          "style": "link",
-          "height": "sm",
-          "action": {
-            "type": "uri",
-            "label": "ウェブサイト",
-            "uri": "https://linecorp.com"
-          }
         },
         {
           "type": "box",
-          "layout": "vertical",
-          "contents": [],
-          "margin": "sm"
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "家族連れ",
+                  "align": "center"
+                },
+                {
+                  "type": "text",
+                  "text": "〇",
+                  "align": "center",
+                  "weight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "separator",
+              "color": "#C3C3C3",
+              "margin": "none"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "アルコール",
+                  "align": "center"
+                },
+                {
+                  "type": "text",
+                  "text": "〇",
+                  "align": "center",
+                  "weight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "separator",
+              "color": "#C3C3C3",
+              "margin": "none"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "たばこ",
+                  "align": "center"
+                },
+                {
+                  "type": "text",
+                  "text": "×",
+                  "align": "center"
+                }
+              ]
+            }
+          ],
+          "spacing": "none",
+          "margin": "xl"
         }
-      ],
-      "flex": 0
+      ]
     }
   }
