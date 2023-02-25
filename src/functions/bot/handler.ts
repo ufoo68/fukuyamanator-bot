@@ -20,9 +20,13 @@ const eventHandler = async (event: Types.PostbackEvent | Types.MessageEvent): Pr
     if (event.message.text === 'おすすめ') {
       return client.replyMessage(event.replyToken, [
       {
+        type: "text",
+        text: "あなたへのおすすめはこれ！"
+      },
+      {
         type: "sticker",
         packageId: "446",
-        stickerId: "1988"
+        stickerId: "1996"
       },
       {
         type: 'flex',
