@@ -68,6 +68,28 @@ export const answer = (): Line.FlexContainer => {
                   "flex": 3
                 }
               ]
+            },
+            {
+              "type": "box",
+              "layout": "baseline",
+              "spacing": "sm",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "住所",
+                  "color": "#aaaaaa",
+                  "size": "sm",
+                  "flex": 1
+                },
+                {
+                  "type": "text",
+                  "text": "福山市三之丸町４番１６号",
+                  "wrap": true,
+                  "color": "#666666",
+                  "size": "sm",
+                  "flex": 3
+                }
+              ]
             }
           ]
         },
@@ -89,6 +111,12 @@ export const answer = (): Line.FlexContainer => {
                   "text": "〇",
                   "align": "center",
                   "weight": "bold"
+                },
+                {
+                  "type": "image",
+                  "url": "https://1.bp.blogspot.com/-ZsRZh52shXU/WWNBGGNeLjI/AAAAAAABFZg/rRxw5r719Jk_ymwSq7sViPCl0DIcHjXigCLcBGAs/s600/travel_happy_family_set.png",
+                  "size": "xs",
+                  "margin": "xs"
                 }
               ]
             },
@@ -111,6 +139,12 @@ export const answer = (): Line.FlexContainer => {
                   "text": "〇",
                   "align": "center",
                   "weight": "bold"
+                },
+                {
+                  "type": "image",
+                  "url": "https://2.bp.blogspot.com/-g0tX6LwKRvU/UgSL9bM2b9I/AAAAAAAAW4g/j8GETOhjCCA/s400/drink_beer.png",
+                  "size": "xs",
+                  "margin": "xs"
                 }
               ]
             },
@@ -132,6 +166,12 @@ export const answer = (): Line.FlexContainer => {
                   "type": "text",
                   "text": "×",
                   "align": "center"
+                },
+                {
+                  "type": "image",
+                  "url": "https://1.bp.blogspot.com/-rZL35FJaZiU/WAhy33_QsqI/AAAAAAAA_IQ/FQMO7VGuCGcF7SZrU13SImecm8jI7w1KQCLcB/s400/tabako.png",
+                  "size": "xs",
+                  "margin": "xs"
                 }
               ]
             }
@@ -141,4 +181,5 @@ export const answer = (): Line.FlexContainer => {
         }
       ]
     }
-  }}
+  }
+}
