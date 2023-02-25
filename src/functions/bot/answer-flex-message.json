@@ -68,90 +68,72 @@
           ]
         },
         {
-          "type": "separator",
-          "margin": "lg",
-          "color": "#C3C3C3"
-        },
-        {
           "type": "box",
-          "layout": "vertical",
+          "layout": "horizontal",
           "contents": [
             {
               "type": "box",
-              "layout": "baseline",
-              "spacing": "sm",
+              "layout": "vertical",
               "contents": [
                 {
                   "type": "text",
-                  "color": "#aaaaaa",
-                  "size": "sm",
-                  "flex": 1,
                   "text": "家族連れ",
-                  "margin": "none",
-                  "offsetTop": "none"
+                  "align": "center"
                 },
                 {
                   "type": "text",
                   "text": "〇",
-                  "wrap": true,
-                  "color": "#666666",
-                  "size": "sm",
-                  "flex": 1
+                  "align": "center",
+                  "weight": "bold"
                 }
-              ],
-              "margin": "lg"
+              ]
+            },
+            {
+              "type": "separator",
+              "color": "#C3C3C3",
+              "margin": "none"
             },
             {
               "type": "box",
-              "layout": "baseline",
-              "spacing": "sm",
+              "layout": "vertical",
               "contents": [
                 {
                   "type": "text",
-                  "color": "#aaaaaa",
-                  "size": "sm",
-                  "flex": 1,
                   "text": "アルコール",
-                  "margin": "none",
-                  "offsetTop": "none"
+                  "align": "center"
                 },
                 {
                   "type": "text",
                   "text": "〇",
-                  "wrap": true,
-                  "color": "#666666",
-                  "size": "sm",
-                  "flex": 1
+                  "align": "center",
+                  "weight": "bold"
                 }
-              ],
-              "margin": "lg"
+              ]
+            },
+            {
+              "type": "separator",
+              "color": "#C3C3C3",
+              "margin": "none"
             },
             {
               "type": "box",
-              "layout": "baseline",
-              "spacing": "sm",
+              "layout": "vertical",
               "contents": [
                 {
                   "type": "text",
-                  "color": "#aaaaaa",
-                  "size": "sm",
-                  "flex": 1,
                   "text": "たばこ",
-                  "margin": "none",
-                  "offsetTop": "none"
+                  "align": "center"
                 },
                 {
                   "type": "text",
-                  "text": "〇",
-                  "wrap": true,
-                  "color": "#666666",
-                  "size": "sm",
-                  "flex": 1
+                  "text": "×",
+                  "align": "center"
                 }
-              ],
-              "margin": "lg"
+              ]
             }
-          ]
+          ],
+          "spacing": "none",
+          "margin": "xl"
         }
       ]
     }
