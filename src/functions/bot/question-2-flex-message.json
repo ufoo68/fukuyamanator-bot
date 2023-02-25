@@ -1,0 +1,55 @@
+{
+    "type": "bubble",
+    "header": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "2つ目の質問",
+          "color": "#aaaaaa",
+          "size": "sm"
+        },
+        {
+          "type": "text",
+          "text": "たばこ吸いますか？",
+          "weight": "bold",
+          "margin": "xs"
+        }
+      ]
+    },
+    "hero": {
+      "type": "image",
+      "url": "https://1.bp.blogspot.com/-rZL35FJaZiU/WAhy33_QsqI/AAAAAAAA_IQ/FQMO7VGuCGcF7SZrU13SImecm8jI7w1KQCLcB/s400/tabako.png"
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "button",
+          "action": {
+            "type": "postback",
+            "label": "はい",
+            "data": "TRUE"
+          },
+          "style": "primary",
+          "offsetEnd": "none",
+          "offsetBottom": "none"
+        },
+        {
+          "type": "separator",
+          "margin": "lg"
+        },
+        {
+          "type": "button",
+          "action": {
+            "type": "postback",
+            "label": "いいえ",
+            "data": "FALSE"
+          },
+          "style": "secondary"
+        }
+      ]
+    }
+  }
