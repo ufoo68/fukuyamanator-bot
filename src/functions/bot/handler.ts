@@ -3,7 +3,8 @@ import * as Line from '@line/bot-sdk'
 import * as Types from '@line/bot-sdk/lib/types'
 import { middyfy } from '@libs/lambda'
 import { formatJSONResponse } from '@libs/api-gateway'
-import replyFlexMessage from './reply-flex-message.json'
+import question1 from './question-1-flex-message.json'
+import answer from './answer-flex-message.json'
 
 const channelAccessToken = process.env.ACCESS_TOKEN!
 const channelSecret = process.env.CHANNEL_SECRET!
@@ -20,17 +21,14 @@ const eventHandler = async (event: Types.PostbackEvent | Types.MessageEvent): Pr
       return client.replyMessage(event.replyToken, {
         type: 'flex',
         altText: 'reply flex yes or no',
-        contents: replyFlexMessage as Line.FlexContainer,
+        contents: question1 as Line.FlexContainer,
       })
     }
-    return client.replyMessage(event.replyToken, {
-      type: 'text',
-      text: event.message.text,
-    })
   } else if (event.type === 'postback') {
     return client.replyMessage(event.replyToken, {
-      type: 'text',
-      text: event.postback.data,
+      type: 'flex',
+      altText: 'reply flex yes or no',
+      contents: answer as Line.FlexContainer,
     })
   }
 }
