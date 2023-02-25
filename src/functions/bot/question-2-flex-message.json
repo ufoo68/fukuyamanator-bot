@@ -1,0 +1,55 @@
+{
+    "type": "bubble",
+    "header": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "2つ目の質問",
+          "color": "#aaaaaa",
+          "size": "sm"
+        },
+        {
+          "type": "text",
+          "text": "アルコールは飲む？",
+          "weight": "bold",
+          "margin": "xs"
+        }
+      ]
+    },
+    "hero": {
+      "type": "image",
+      "url": "https://2.bp.blogspot.com/-g0tX6LwKRvU/UgSL9bM2b9I/AAAAAAAAW4g/j8GETOhjCCA/s400/drink_beer.png"
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "button",
+          "action": {
+            "type": "postback",
+            "label": "はい",
+            "data": "TRUE"
+          },
+          "style": "primary",
+          "offsetEnd": "none",
+          "offsetBottom": "none"
+        },
+        {
+          "type": "separator",
+          "margin": "lg"
+        },
+        {
+          "type": "button",
+          "action": {
+            "type": "postback",
+            "label": "いいえ",
+            "data": "FALSE"
+          },
+          "style": "secondary"
+        }
+      ]
+    }
+  }

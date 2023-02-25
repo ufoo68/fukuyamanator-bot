@@ -1,0 +1,55 @@
+{
+    "type": "bubble",
+    "header": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "4つ目の質問",
+          "color": "#aaaaaa",
+          "size": "sm"
+        },
+        {
+          "type": "text",
+          "text": "ご当地グルメが食べたい？",
+          "weight": "bold",
+          "margin": "xs"
+        }
+      ]
+    },
+    "hero": {
+      "type": "image",
+      "url": "https://www.city.fukuyama.hiroshima.jp/uploaded/image/11535.jpg"
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "button",
+          "action": {
+            "type": "postback",
+            "label": "はい",
+            "data": "TRUE"
+          },
+          "style": "primary",
+          "offsetEnd": "none",
+          "offsetBottom": "none"
+        },
+        {
+          "type": "separator",
+          "margin": "lg"
+        },
+        {
+          "type": "button",
+          "action": {
+            "type": "postback",
+            "label": "いいえ",
+            "data": "FALSE"
+          },
+          "style": "secondary"
+        }
+      ]
+    }
+  }
