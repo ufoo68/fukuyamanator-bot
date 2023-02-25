@@ -1,4 +1,8 @@
-{
+import * as Line from '@line/bot-sdk'
+
+// FIXME
+export const answer = (): Line.FlexContainer => {
+  return {
     "type": "bubble",
     "body": {
       "type": "box",
@@ -137,4 +141,4 @@
         }
       ]
     }
-  }
+  }}
