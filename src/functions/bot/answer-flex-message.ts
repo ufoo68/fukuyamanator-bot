@@ -180,6 +180,34 @@ export const answer = (): Line.FlexContainer => {
           "margin": "xl"
         }
       ]
+    },
+    "footer": {
+      "type": "box",
+      "layout": "horizontal",
+      "contents": [
+        {
+          "type": "button",
+          "action": {
+            "type": "postback",
+            "label": "もう一度",
+            "data": "hello"
+          },
+          "style": "secondary"
+        },
+        {
+          "type": "separator",
+          "margin": "md"
+        },
+        {
+          "type": "button",
+          "action": {
+            "type": "postback",
+            "label": "気に入った！",
+            "data": "hello"
+          },
+          "style": "primary"
+        }
+      ]
     }
   }
 }

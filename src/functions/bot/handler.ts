@@ -18,17 +18,23 @@ const client = new Line.Client(config)
 const eventHandler = async (event: Types.PostbackEvent | Types.MessageEvent): Promise<any> => {
   if (event.type === 'message' && event.message.type === 'text') {
     if (event.message.text === 'おすすめ') {
-      return client.replyMessage(event.replyToken, {
+      return client.replyMessage(event.replyToken, [
+      {
+        type: "sticker",
+        packageId: "446",
+        stickerId: "1988"
+      },
+      {
         type: 'flex',
         altText: 'reply flex yes or no',
         contents: question({ questionId: 1, order: 1 }),
-      })
+      }])
     }
   } else if (event.type === 'postback') {
     return client.replyMessage(event.replyToken, {
       type: 'flex',
       altText: 'reply flex yes or no',
-      contents: answer(),
+      contents: answer(), 
     })
   }
 }
