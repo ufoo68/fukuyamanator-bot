@@ -6,13 +6,13 @@
       "contents": [
         {
           "type": "text",
-          "text": "2つ目の質問",
+          "text": "最後の質問",
           "color": "#aaaaaa",
           "size": "sm"
         },
         {
           "type": "text",
-          "text": "アルコールは飲む？",
+          "text": "甘いもの好き？",
           "weight": "bold",
           "margin": "xs"
         }
@@ -20,7 +20,7 @@
     },
     "hero": {
       "type": "image",
-      "url": "https://2.bp.blogspot.com/-g0tX6LwKRvU/UgSL9bM2b9I/AAAAAAAAW4g/j8GETOhjCCA/s400/drink_beer.png"
+      "url": "https://4.bp.blogspot.com/-N6KOeEevp1k/UaVVFobLFhI/AAAAAAAAT_c/DvFWPJLwni8/s800/icecream2_strawberry.png"
     },
     "body": {
       "type": "box",

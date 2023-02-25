@@ -6,13 +6,13 @@
       "contents": [
         {
           "type": "text",
-          "text": "2つ目の質問",
+          "text": "4つ目の質問",
           "color": "#aaaaaa",
           "size": "sm"
         },
         {
           "type": "text",
-          "text": "アルコールは飲む？",
+          "text": "ご当地グルメが食べたい？",
           "weight": "bold",
           "margin": "xs"
         }
@@ -20,7 +20,7 @@
     },
     "hero": {
       "type": "image",
-      "url": "https://2.bp.blogspot.com/-g0tX6LwKRvU/UgSL9bM2b9I/AAAAAAAAW4g/j8GETOhjCCA/s400/drink_beer.png"
+      "url": "https://www.city.fukuyama.hiroshima.jp/uploaded/image/11535.jpg"
     },
     "body": {
       "type": "box",

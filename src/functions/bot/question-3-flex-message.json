@@ -6,13 +6,13 @@
       "contents": [
         {
           "type": "text",
-          "text": "2つ目の質問",
+          "text": "3つ目の質問",
           "color": "#aaaaaa",
           "size": "sm"
         },
         {
           "type": "text",
-          "text": "アルコールは飲む？",
+          "text": "家族連れ？",
           "weight": "bold",
           "margin": "xs"
         }
@@ -20,7 +20,8 @@
     },
     "hero": {
       "type": "image",
-      "url": "https://2.bp.blogspot.com/-g0tX6LwKRvU/UgSL9bM2b9I/AAAAAAAAW4g/j8GETOhjCCA/s400/drink_beer.png"
+      "url": "https://1.bp.blogspot.com/-ZsRZh52shXU/WWNBGGNeLjI/AAAAAAABFZg/rRxw5r719Jk_ymwSq7sViPCl0DIcHjXigCLcBGAs/s600/travel_happy_family_set.png",
+      "size": "3xl"
     },
     "body": {
       "type": "box",

@@ -12,7 +12,7 @@
       },
       {
         "type": "text",
-        "text": "ご当地グルメが食べたい？",
+        "text": "たばこ吸う？",
         "weight": "bold",
         "margin": "xs"
       }
@@ -20,7 +20,7 @@
   },
   "hero": {
     "type": "image",
-    "url": "https://www.city.fukuyama.hiroshima.jp/uploaded/image/11535.jpg"
+    "url": "https://1.bp.blogspot.com/-rZL35FJaZiU/WAhy33_QsqI/AAAAAAAA_IQ/FQMO7VGuCGcF7SZrU13SImecm8jI7w1KQCLcB/s400/tabako.png"
   },
   "body": {
     "type": "box",
