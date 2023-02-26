@@ -12,7 +12,8 @@ export const answer = (params: { restrantName: string; photoUrl: string; isTobac
           "type": "image",
           "url": photoUrl,
           "size": "full",
-          "aspectMode": "fit",
+          "aspectMode": "cover",
+          "aspectRatio": "20:13"
           "action": {
             "type": "uri",
             "label": "action",
