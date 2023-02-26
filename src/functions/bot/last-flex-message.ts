@@ -6,20 +6,12 @@ export const last = (params: { siteUrl: string }): Line.FlexContainer => {
     "header": {
       "type": "box",
       "layout": "vertical",
-      "contents": [
-        {
-          "type": "text",
-          "text": "THANK YOU",
-          "color": "#06C755",
-          "align": "start",
-          "weight": "bold"
-        }
-      ]
+      "contents": []
     },
     "hero": {
       "type": "image",
-      "url": "https://www.city.fukuyama.hiroshima.jp/uploaded/image/11535.jpg",
-      "size": "5xl",
+      "url": "https://yuya2001.cocolog-nifty.com/photos/uncategorized/2013/09/22/7022.jpg",
+      "size": "3xl",
       "margin": "none"
     },
     "body": {

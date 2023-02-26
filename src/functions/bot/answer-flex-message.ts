@@ -41,7 +41,7 @@ export const answer = (params: { restrantName: string; photoUrl: string; isTobac
           "offsetStart": "18px",
           "offsetTop": "18px",
           "cornerRadius": "100px",
-          "width": "100px",
+          "width": "80px",
           "height": "25px"
         }
       ],
@@ -64,11 +64,23 @@ export const answer = (params: { restrantName: string; photoUrl: string; isTobac
           "wrap": true
         },
         {
+          "type": "separator",
+          "color": "#FFFFFF",
+          "margin": "sm"
+        },
+        {
           "type": "text",
           "text": catchphrase,
           "wrap": true,
           "color": "#06C755",
-          "weight": "bold"
+          "weight": "bold",
+          "margin": "md",
+          "offsetBottom": "md"
+        },
+        {
+          "type": "separator",
+          "color": "#FFFFFF",
+          "margin": "sm"
         },
         {
           "type": "box",
@@ -81,7 +93,8 @@ export const answer = (params: { restrantName: string; photoUrl: string; isTobac
                 {
                   "type": "text",
                   "text": "家族連れ",
-                  "align": "center"
+                  "align": "center",
+                  "size": "sm"
                 },
                 {
                   "type": "text",
@@ -103,7 +116,8 @@ export const answer = (params: { restrantName: string; photoUrl: string; isTobac
                 {
                   "type": "text",
                   "text": "アルコール",
-                  "align": "center"
+                  "align": "center",
+                  "size": "sm"
                 },
                 {
                   "type": "text",
@@ -125,18 +139,18 @@ export const answer = (params: { restrantName: string; photoUrl: string; isTobac
                 {
                   "type": "text",
                   "text": "たばこ",
-                  "align": "center"
+                  "align": "center",
+                  "size": "sm"
                 },
                 {
                   "type": "text",
                   "text": isTobacco ? '◯' : '✕',
-                  "align": "center"
+                  "align": "center",
+                  "weight": "bold"
                 }
               ]
             }
-          ],
-          "spacing": "none",
-          "margin": "xl"
+          ]
         }
       ]
     },
