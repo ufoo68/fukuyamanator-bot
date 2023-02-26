@@ -168,7 +168,7 @@ export const answer = (params: { restrantName: string; photoUrl: string; isTobac
               "action": {
                 "type": "postback",
                 "label": "もう一度",
-                "data": JSON.stringify({ isComplete: false }),
+                "data": JSON.stringify({ isComplete: false, event: 'guess' }),
                 displayText: 'もう一度',
               },
               "style": "secondary"
@@ -182,7 +182,7 @@ export const answer = (params: { restrantName: string; photoUrl: string; isTobac
               "action": {
                 "type": "postback",
                 "label": "いきたい！",
-                "data": JSON.stringify({ isComplete: true }),
+                "data": JSON.stringify({ isComplete: true, event: 'guess' }),
                 displayText: 'いきたい！',
               },
               "style": "primary"

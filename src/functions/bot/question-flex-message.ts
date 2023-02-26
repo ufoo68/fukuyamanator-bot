@@ -36,7 +36,7 @@ export const question = (params: { questionSum: number; quetionThumbnail: string
           action: {
             type: 'postback',
             label: 'はい',
-            data: JSON.stringify({ questionId, answer: true }),
+            data: JSON.stringify({ questionId, answer: true, event: 'answer' }),
             displayText: 'はい',
           },
           style: 'primary',
@@ -52,7 +52,7 @@ export const question = (params: { questionSum: number; quetionThumbnail: string
           action: {
             type: 'postback',
             label: 'いいえ',
-            data: JSON.stringify({ questionId, answer: false }),
+            data: JSON.stringify({ questionId, answer: false, event: 'answer' }),
             displayText: 'いいえ',
           },
           style: 'secondary'
