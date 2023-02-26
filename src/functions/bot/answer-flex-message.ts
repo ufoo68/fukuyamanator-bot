@@ -4,94 +4,71 @@ import * as Line from '@line/bot-sdk'
 export const answer = (): Line.FlexContainer => {
   return {
     "type": "bubble",
+    "header": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "image",
+          "url": "https://imgfp.hotp.jp/IMGH/92/50/P039539250/P039539250_480.jpg",
+          "size": "full",
+          "aspectMode": "fit",
+          "action": {
+            "type": "uri",
+            "label": "action",
+            "uri": "http://linecorp.com/"
+          }
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "text",
+              "text": "おすすめ",
+              "size": "xs",
+              "color": "#ffffff",
+              "align": "center",
+              "gravity": "center"
+            }
+          ],
+          "backgroundColor": "#EC3D44",
+          "paddingAll": "2px",
+          "paddingStart": "4px",
+          "paddingEnd": "4px",
+          "flex": 0,
+          "position": "absolute",
+          "offsetStart": "18px",
+          "offsetTop": "18px",
+          "cornerRadius": "100px",
+          "width": "100px",
+          "height": "25px"
+        }
+      ],
+      "paddingAll": "0px"
+    },
     "body": {
       "type": "box",
       "layout": "vertical",
       "contents": [
         {
           "type": "text",
-          "text": "尾道ラーメン 一丁",
+          "text": "串揚げさっくる　このさきや",
           "weight": "bold",
           "size": "xl",
           "action": {
             "type": "message",
             "label": "action",
             "text": "hello"
-          }
+          },
+          "wrap": true
         },
         {
-          "type": "box",
-          "layout": "vertical",
-          "margin": "lg",
-          "spacing": "sm",
-          "contents": [
-            {
-              "type": "box",
-              "layout": "baseline",
-              "spacing": "sm",
-              "contents": [
-                {
-                  "type": "text",
-                  "text": "時間",
-                  "color": "#aaaaaa",
-                  "size": "sm",
-                  "flex": 1
-                },
-                {
-                  "type": "text",
-                  "text": "10:00 - 23:00",
-                  "wrap": true,
-                  "color": "#666666",
-                  "size": "sm",
-                  "flex": 3
-                }
-              ]
-            },
-            {
-              "type": "box",
-              "layout": "baseline",
-              "spacing": "sm",
-              "contents": [
-                {
-                  "type": "text",
-                  "text": "ジャンル",
-                  "color": "#aaaaaa",
-                  "size": "sm",
-                  "flex": 1
-                },
-                {
-                  "type": "text",
-                  "text": "ラーメン",
-                  "wrap": true,
-                  "color": "#666666",
-                  "size": "sm",
-                  "flex": 3
-                }
-              ]
-            },
-            {
-              "type": "box",
-              "layout": "baseline",
-              "spacing": "sm",
-              "contents": [
-                {
-                  "type": "text",
-                  "text": "住所",
-                  "color": "#aaaaaa",
-                  "size": "sm",
-                  "flex": 1
-                },
-                {
-                  "type": "text",
-                  "text": "福山市三之丸町４番１６号",
-                  "wrap": true,
-                  "color": "#666666",
-                  "size": "sm",
-                  "flex": 3
-                }
-              ]
-            }
-          ]
+          "type": "text",
+          "text": "さくっと立飲み★ 串揚げ1本100円(税抜)～",
+          "wrap": true,
+          "color": "#06C755",
+          "weight": "bold"
         },
         {
           "type": "box",
@@ -111,12 +88,6 @@ export const answer = (): Line.FlexContainer => {
                   "text": "〇",
                   "align": "center",
                   "weight": "bold"
-                },
-                {
-                  "type": "image",
-                  "url": "https://1.bp.blogspot.com/-ZsRZh52shXU/WWNBGGNeLjI/AAAAAAABFZg/rRxw5r719Jk_ymwSq7sViPCl0DIcHjXigCLcBGAs/s600/travel_happy_family_set.png",
-                  "size": "xs",
-                  "margin": "xs"
                 }
               ]
             },
@@ -139,12 +110,6 @@ export const answer = (): Line.FlexContainer => {
                   "text": "〇",
                   "align": "center",
                   "weight": "bold"
-                },
-                {
-                  "type": "image",
-                  "url": "https://2.bp.blogspot.com/-g0tX6LwKRvU/UgSL9bM2b9I/AAAAAAAAW4g/j8GETOhjCCA/s400/drink_beer.png",
-                  "size": "xs",
-                  "margin": "xs"
                 }
               ]
             },
@@ -166,12 +131,6 @@ export const answer = (): Line.FlexContainer => {
                   "type": "text",
                   "text": "×",
                   "align": "center"
-                },
-                {
-                  "type": "image",
-                  "url": "https://1.bp.blogspot.com/-rZL35FJaZiU/WAhy33_QsqI/AAAAAAAA_IQ/FQMO7VGuCGcF7SZrU13SImecm8jI7w1KQCLcB/s400/tabako.png",
-                  "size": "xs",
-                  "margin": "xs"
                 }
               ]
             }
@@ -183,29 +142,35 @@ export const answer = (): Line.FlexContainer => {
     },
     "footer": {
       "type": "box",
-      "layout": "horizontal",
+      "layout": "vertical",
       "contents": [
         {
-          "type": "button",
-          "action": {
-            "type": "postback",
-            "label": "もう一度",
-            "data": "hello"
-          },
-          "style": "secondary"
-        },
-        {
-          "type": "separator",
-          "margin": "md"
-        },
-        {
-          "type": "button",
-          "action": {
-            "type": "postback",
-            "label": "気に入った！",
-            "data": "hello"
-          },
-          "style": "primary"
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "postback",
+                "label": "もう一度",
+                "data": "hello"
+              },
+              "style": "secondary"
+            },
+            {
+              "type": "separator",
+              "margin": "md"
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "postback",
+                "label": "いきたい！",
+                "data": "hello"
+              },
+              "style": "primary"
+            }
+          ]
         }
       ]
     }
