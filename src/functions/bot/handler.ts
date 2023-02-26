@@ -22,7 +22,7 @@ const client = new Line.Client(config)
 const eventHandler = async (event: Types.PostbackEvent | Types.MessageEvent): Promise<any> => {
   if (event.type === 'message' && event.message.type === 'text') {
     if (event.message.text === 'おすすめをおしえて') {
-      const { data } = await axios.post(apiEndpoint, { userId: event.source.userId })
+      const { data } = await axios.post(apiEndpoint, { userId: event.source.userId, event: 'start' })
       return client.replyMessage(event.replyToken, [
         {
           type: 'flex',
