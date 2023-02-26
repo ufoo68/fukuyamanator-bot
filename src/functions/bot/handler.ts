@@ -5,6 +5,7 @@ import { middyfy } from '@libs/lambda'
 import { formatJSONResponse } from '@libs/api-gateway'
 import { question } from './question-flex-message'
 import { answer } from './answer-flex-message'
+import { last } from './last-flex-message'
 
 const channelAccessToken = process.env.ACCESS_TOKEN!
 const channelSecret = process.env.CHANNEL_SECRET!
@@ -40,6 +41,8 @@ const eventHandler = async (event: Types.PostbackEvent | Types.MessageEvent): Pr
       altText: 'reply flex yes or no',
       contents: answer(), 
     })
+
+    // TODO: 「気に入った！」ボタンをタップ後、last()を表示
   }
 }
 
