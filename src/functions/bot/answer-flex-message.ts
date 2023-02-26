@@ -1,7 +1,7 @@
 import * as Line from '@line/bot-sdk'
 
-// FIXME
-export const answer = (): Line.FlexContainer => {
+export const answer = (params: { restrantName: string; photoUrl: string; isTobacco: boolean; isFamily: boolean; isAlcohol: boolean; catchphrase: string }): Line.FlexContainer => {
+  const { restrantName, photoUrl, isAlcohol, isFamily, isTobacco, catchphrase } = params
   return {
     "type": "bubble",
     "header": {
@@ -10,7 +10,7 @@ export const answer = (): Line.FlexContainer => {
       "contents": [
         {
           "type": "image",
-          "url": "https://imgfp.hotp.jp/IMGH/92/50/P039539250/P039539250_480.jpg",
+          "url": photoUrl,
           "size": "full",
           "aspectMode": "fit",
           "action": {
@@ -53,7 +53,7 @@ export const answer = (): Line.FlexContainer => {
       "contents": [
         {
           "type": "text",
-          "text": "串揚げさっくる　このさきや",
+          "text": restrantName,
           "weight": "bold",
           "size": "xl",
           "action": {
@@ -65,7 +65,7 @@ export const answer = (): Line.FlexContainer => {
         },
         {
           "type": "text",
-          "text": "さくっと立飲み★ 串揚げ1本100円(税抜)～",
+          "text": catchphrase,
           "wrap": true,
           "color": "#06C755",
           "weight": "bold"
@@ -85,7 +85,7 @@ export const answer = (): Line.FlexContainer => {
                 },
                 {
                   "type": "text",
-                  "text": "〇",
+                  "text": isFamily ? '◯' : '✕',
                   "align": "center",
                   "weight": "bold"
                 }
@@ -107,7 +107,7 @@ export const answer = (): Line.FlexContainer => {
                 },
                 {
                   "type": "text",
-                  "text": "〇",
+                  "text": isAlcohol ? '◯' : '✕',
                   "align": "center",
                   "weight": "bold"
                 }
@@ -129,7 +129,7 @@ export const answer = (): Line.FlexContainer => {
                 },
                 {
                   "type": "text",
-                  "text": "×",
+                  "text": isTobacco ? '◯' : '✕',
                   "align": "center"
                 }
               ]
@@ -153,7 +153,8 @@ export const answer = (): Line.FlexContainer => {
               "action": {
                 "type": "postback",
                 "label": "もう一度",
-                "data": "hello"
+                "data": JSON.stringify({ isComplete: false }),
+                displayText: 'もう一度',
               },
               "style": "secondary"
             },
@@ -166,7 +167,8 @@ export const answer = (): Line.FlexContainer => {
               "action": {
                 "type": "postback",
                 "label": "いきたい！",
-                "data": "hello"
+                "data": JSON.stringify({ isComplete: true }),
+                displayText: 'いきたい！',
               },
               "style": "primary"
             }

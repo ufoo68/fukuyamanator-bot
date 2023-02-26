@@ -1,7 +1,6 @@
 import * as Line from '@line/bot-sdk'
 
-// FIXME
-export const last = (): Line.FlexContainer => {
+export const last = (params: { siteUrl: string }): Line.FlexContainer => {
   return {
     "type": "bubble",
     "header": {
@@ -45,7 +44,7 @@ export const last = (): Line.FlexContainer => {
           "action": {
             "type": "uri",
             "label": "お店の詳細へ",
-            "uri": "http://linecorp.com/"
+            "uri": params.siteUrl,
           },
           "style": "primary"
         }
