@@ -71,7 +71,7 @@ export const answer = (params: { restrantName: string; photoUrl: string; isTobac
         },
         {
           "type": "text",
-          "text": catchphrase,
+          "text": catchphrase || '-',
           "wrap": true,
           "color": "#06C755",
           "weight": "bold",
